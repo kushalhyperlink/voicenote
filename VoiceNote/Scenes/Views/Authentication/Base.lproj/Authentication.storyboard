@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gqG-je-z9t">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="VoiceNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Sd-nk-Uch">
+                                <rect key="frame" x="20" y="194" width="280" height="171.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6OJ-Cu-CKR">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="95.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7uc-Od-Dkh" customClass="ThemeTextField" customModule="VoiceNote" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="42.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a30-XG-flv" customClass="ThemeTextField" customModule="VoiceNote" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="52.5" width="280" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzs-bu-k6N" customClass="ThemeLightBlue" customModule="VoiceNote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="125.5" width="280" height="46"/>
+                                        <color key="backgroundColor" name="ThemePinkishOrange"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="12" maxX="5" maxY="12"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Sign In"/>
+                                        <connections>
+                                            <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SB0-7l-IMi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Vzs-bu-k6N" firstAttribute="top" secondItem="6OJ-Cu-CKR" secondAttribute="bottom" constant="30" id="KR6-Ay-NDl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vzs-bu-k6N" secondAttribute="bottom" id="OCk-7F-iLW"/>
+                                    <constraint firstItem="Vzs-bu-k6N" firstAttribute="leading" secondItem="6Sd-nk-Uch" secondAttribute="leading" id="Udt-LM-LtE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vzs-bu-k6N" secondAttribute="trailing" id="VA0-am-HN2"/>
+                                    <constraint firstItem="6OJ-Cu-CKR" firstAttribute="leading" secondItem="6Sd-nk-Uch" secondAttribute="leading" id="lKM-Af-8m5"/>
+                                    <constraint firstItem="6OJ-Cu-CKR" firstAttribute="top" secondItem="6Sd-nk-Uch" secondAttribute="top" id="tkn-vO-66C"/>
+                                    <constraint firstAttribute="trailing" secondItem="6OJ-Cu-CKR" secondAttribute="trailing" id="trd-Hb-mBH"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="g5n-Pw-na3">
+                                <rect key="frame" x="81.5" y="100" width="157" height="74"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Sd-nk-Uch" secondAttribute="trailing" constant="20" id="NpU-Q2-zjw"/>
+                            <constraint firstItem="6Sd-nk-Uch" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RCM-2Y-1Jm"/>
+                            <constraint firstItem="7uc-Od-Dkh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="50/375" id="RLa-NV-pQH"/>
+                            <constraint firstItem="6Sd-nk-Uch" firstAttribute="top" secondItem="g5n-Pw-na3" secondAttribute="bottom" constant="20" id="dJ7-mQ-CFs"/>
+                            <constraint firstItem="g5n-Pw-na3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="vR7-xS-smv"/>
+                            <constraint firstItem="g5n-Pw-na3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vtS-GB-WBJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CDj-w7-5fS"/>
+                    <connections>
+                        <outlet property="txtUserId" destination="7uc-Od-Dkh" id="b6N-JE-kcU"/>
+                        <outlet property="txtUserName" destination="a30-XG-flv" id="DIk-Di-e0P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="83"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vwc-VR-uZV">
+            <objects>
+                <navigationController storyboardIdentifier="NavLogin" automaticallyAdjustsScrollViewInsets="NO" id="gqG-je-z9t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mEH-FV-bCh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DWP-lU-PBs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFN-kM-emE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="83.450704225352112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="157" height="74"/>
+        <namedColor name="ThemePinkishOrange">
+            <color red="0.99215686274509807" green="0.41960784313725491" blue="0.3843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
